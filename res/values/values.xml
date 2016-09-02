@@ -3,19 +3,13 @@
     <attr format="reference" name="MediaRouteControllerWindowBackground"/>
     <attr format="reference" name="mediaRouteAudioTrackDrawable"/>
     <attr format="reference" name="mediaRouteButtonStyle"/>
-    <attr format="reference" name="mediaRouteCastDrawable"/>
     <attr format="reference" name="mediaRouteChooserPrimaryTextStyle"/>
     <attr format="reference" name="mediaRouteChooserSecondaryTextStyle"/>
     <attr format="reference" name="mediaRouteCloseDrawable"/>
-    <attr format="reference" name="mediaRouteCollapseGroupDrawable"/>
-    <attr format="reference" name="mediaRouteConnectingDrawable"/>
     <attr format="reference" name="mediaRouteControllerPrimaryTextStyle"/>
     <attr format="reference" name="mediaRouteControllerSecondaryTextStyle"/>
     <attr format="reference" name="mediaRouteControllerTitleTextStyle"/>
     <attr format="reference" name="mediaRouteDefaultIconDrawable"/>
-    <attr format="reference" name="mediaRouteExpandGroupDrawable"/>
-    <attr format="reference" name="mediaRouteOffDrawable"/>
-    <attr format="reference" name="mediaRouteOnDrawable"/>
     <attr format="reference" name="mediaRoutePauseDrawable"/>
     <attr format="reference" name="mediaRoutePlayDrawable"/>
     <attr format="reference" name="mediaRouteSpeakerGroupIconDrawable"/>
@@ -32,6 +26,9 @@
     <integer name="mr_controller_volume_group_list_fade_in_duration_ms">400</integer>
     <integer name="mr_controller_volume_group_list_fade_out_duration_ms">200</integer>
     <string name="mr_button_content_description">Cast button</string>
+    <string name="mr_cast_button_connected">Cast button. Connected</string>
+    <string name="mr_cast_button_connecting">Cast button. Connecting</string>
+    <string name="mr_cast_button_disconnected">Cast button. Disconnected</string>
     <string name="mr_chooser_searching">Finding devices</string>
     <string name="mr_chooser_title">Cast to</string>
     <string name="mr_controller_album_art">Album art</string>
@@ -45,6 +42,7 @@
     <string name="mr_controller_pause">Pause</string>
     <string name="mr_controller_play">Play</string>
     <string name="mr_controller_stop">Stop casting</string>
+    <string name="mr_controller_volume_slider">Volume slider</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
     <style name="Theme.MediaRouter" parent="">
@@ -52,18 +50,14 @@
         <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.MediaRouteButton</item>
 
         <item name="MediaRouteControllerWindowBackground">@drawable/mr_dialog_material_background_dark</item>
-        <item name="mediaRouteOffDrawable">@drawable/ic_media_route_off_mono_dark</item>
-        <item name="mediaRouteConnectingDrawable">@drawable/mr_ic_media_route_connecting_dark</item>
-        <item name="mediaRouteOnDrawable">@drawable/mr_ic_media_route_on_dark</item>
-        <item name="mediaRouteCloseDrawable">@drawable/mr_ic_close_dark</item>
-        <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_dark</item>
-        <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_dark</item>
-        <item name="mediaRouteCastDrawable">@drawable/mr_ic_cast_dark</item>
-        <item name="mediaRouteAudioTrackDrawable">@drawable/ic_audiotrack</item>
-        <item name="mediaRouteDefaultIconDrawable">@drawable/ic_cast_white</item>
-        <item name="mediaRouteTvIconDrawable">@drawable/ic_tv_dark</item>
-        <item name="mediaRouteSpeakerIconDrawable">@drawable/ic_speaker_dark</item>
-        <item name="mediaRouteSpeakerGroupIconDrawable">@drawable/ic_speaker_group_dark</item>
+        <item name="mediaRouteCloseDrawable">@drawable/mr_dialog_close_dark</item>
+        <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_dark</item>
+        <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_dark</item>
+        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_dark</item>
+        <item name="mediaRouteDefaultIconDrawable">@drawable/ic_mr_button_disconnected_dark</item>
+        <item name="mediaRouteTvIconDrawable">@drawable/ic_vol_type_tv_dark</item>
+        <item name="mediaRouteSpeakerIconDrawable">@drawable/ic_vol_type_speaker_dark</item>
+        <item name="mediaRouteSpeakerGroupIconDrawable">@drawable/ic_vol_type_speaker_group_dark</item>
         <item name="mediaRouteChooserPrimaryTextStyle">@style/Widget.MediaRouter.ChooserText.Primary.Dark</item>
         <item name="mediaRouteChooserSecondaryTextStyle">@style/Widget.MediaRouter.ChooserText.Secondary.Dark</item>
         <item name="mediaRouteControllerTitleTextStyle">@style/Widget.MediaRouter.ControllerText.Title.Dark</item>
@@ -74,18 +68,14 @@
         <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.Light.MediaRouteButton</item>
 
         <item name="MediaRouteControllerWindowBackground">@drawable/mr_dialog_material_background_light</item>
-        <item name="mediaRouteOffDrawable">@drawable/ic_cast_off_light</item>
-        <item name="mediaRouteConnectingDrawable">@drawable/mr_ic_media_route_connecting_light</item>
-        <item name="mediaRouteOnDrawable">@drawable/mr_ic_media_route_on_light</item>
-        <item name="mediaRouteCloseDrawable">@drawable/mr_ic_close_light</item>
-        <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_light</item>
-        <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_light</item>
-        <item name="mediaRouteCastDrawable">@drawable/mr_ic_cast_light</item>
-        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_ic_audiotrack_light</item>
-        <item name="mediaRouteDefaultIconDrawable">@drawable/ic_cast_grey</item>
-        <item name="mediaRouteTvIconDrawable">@drawable/ic_tv_light</item>
-        <item name="mediaRouteSpeakerIconDrawable">@drawable/ic_speaker_light</item>
-        <item name="mediaRouteSpeakerGroupIconDrawable">@drawable/ic_speaker_group_light</item>
+        <item name="mediaRouteCloseDrawable">@drawable/mr_dialog_close_light</item>
+        <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_light</item>
+        <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_light</item>
+        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_light</item>
+        <item name="mediaRouteDefaultIconDrawable">@drawable/ic_mr_button_grey</item>
+        <item name="mediaRouteTvIconDrawable">@drawable/ic_vol_type_tv_light</item>
+        <item name="mediaRouteSpeakerIconDrawable">@drawable/ic_vol_type_speaker_light</item>
+        <item name="mediaRouteSpeakerGroupIconDrawable">@drawable/ic_vol_type_speaker_group_light</item>
         <item name="mediaRouteChooserPrimaryTextStyle">@style/Widget.MediaRouter.ChooserText.Primary.Light</item>
         <item name="mediaRouteChooserSecondaryTextStyle">@style/Widget.MediaRouter.ChooserText.Secondary.Light</item>
         <item name="mediaRouteControllerTitleTextStyle">@style/Widget.MediaRouter.ControllerText.Title.Light</item>
@@ -93,18 +83,16 @@
         <item name="mediaRouteControllerSecondaryTextStyle">@style/Widget.MediaRouter.ControllerText.Secondary.Light</item>
     </style>
     <style name="Theme.MediaRouter.Light.DarkControlPanel">
-        <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_dark</item>
-        <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_dark</item>
-        <item name="mediaRouteCastDrawable">@drawable/mr_ic_cast_dark</item>
-        <item name="mediaRouteAudioTrackDrawable">@drawable/ic_audiotrack</item>
+        <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_dark</item>
+        <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_dark</item>
+        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_dark</item>
         <item name="mediaRouteControllerPrimaryTextStyle">@style/Widget.MediaRouter.ControllerText.Primary.Dark</item>
         <item name="mediaRouteControllerSecondaryTextStyle">@style/Widget.MediaRouter.ControllerText.Secondary.Dark</item>
     </style>
     <style name="Theme.MediaRouter.LightControlPanel">
-        <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_light</item>
-        <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_light</item>
-        <item name="mediaRouteCastDrawable">@drawable/mr_ic_cast_light</item>
-        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_ic_audiotrack_light</item>
+        <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_light</item>
+        <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_light</item>
+        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_light</item>
         <item name="mediaRouteControllerPrimaryTextStyle">@style/Widget.MediaRouter.ControllerText.Primary.Light</item>
         <item name="mediaRouteControllerSecondaryTextStyle">@style/Widget.MediaRouter.ControllerText.Secondary.Light</item>
     </style>
@@ -160,11 +148,9 @@
         <item name="android:textColor">#DE000000</item>
     </style>
     <style name="Widget.MediaRouter.Light.MediaRouteButton" parent="Widget.AppCompat.Light.ActionButton">
-        <item name="android:contentDescription">@string/mr_button_content_description</item>
-        <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_light</item>
+        <item name="externalRouteEnabledDrawable">@drawable/mr_button_light</item>
     </style>
     <style name="Widget.MediaRouter.MediaRouteButton" parent="Widget.AppCompat.ActionButton">
-        <item name="android:contentDescription">@string/mr_button_content_description</item>
-        <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_dark</item>
+        <item name="externalRouteEnabledDrawable">@drawable/mr_button_dark</item>
     </style>
 </resources>
