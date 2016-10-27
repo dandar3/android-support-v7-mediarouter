@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string msgid="3698378085901466129" name="mr_button_content_description">"投射按钮"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"投射按钮。已连接"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"投射按钮。正在连接"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"投射按钮。已断开连接"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"正在查找设备"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"投射到"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"专辑封面"</string>
@@ -14,6 +17,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"暂停"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"播放"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"停止投射"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"音量滑块"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"系统"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"设备"</string>
 </resources>
