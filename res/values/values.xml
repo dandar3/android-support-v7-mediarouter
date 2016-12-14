@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr format="reference" name="MediaRouteControllerWindowBackground"/>
     <attr format="reference" name="mediaRouteAudioTrackDrawable"/>
     <attr format="reference" name="mediaRouteButtonStyle"/>
-    <attr format="reference" name="mediaRouteChooserPrimaryTextStyle"/>
-    <attr format="reference" name="mediaRouteChooserSecondaryTextStyle"/>
     <attr format="reference" name="mediaRouteCloseDrawable"/>
-    <attr format="reference" name="mediaRouteControllerPrimaryTextStyle"/>
-    <attr format="reference" name="mediaRouteControllerSecondaryTextStyle"/>
-    <attr format="reference" name="mediaRouteControllerTitleTextStyle"/>
+    <attr format="reference" name="mediaRouteControlPanelThemeOverlay"/>
     <attr format="reference" name="mediaRouteDefaultIconDrawable"/>
     <attr format="reference" name="mediaRoutePauseDrawable"/>
     <attr format="reference" name="mediaRoutePlayDrawable"/>
     <attr format="reference" name="mediaRouteSpeakerGroupIconDrawable"/>
     <attr format="reference" name="mediaRouteSpeakerIconDrawable"/>
+    <attr format="reference" name="mediaRouteTheme"/>
     <attr format="reference" name="mediaRouteTvIconDrawable"/>
-    <declare-styleable name="MediaRouteButton"><attr format="reference" name="externalRouteEnabledDrawable"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
+    <declare-styleable name="MediaRouteButton"><attr format="reference" name="externalRouteEnabledDrawable"/><attr name="buttonTint"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
     <dimen name="mr_controller_volume_group_list_item_height">68dp</dimen>
     <dimen name="mr_controller_volume_group_list_item_icon_size">24dp</dimen>
     <dimen name="mr_controller_volume_group_list_max_height">288dp</dimen>
@@ -45,11 +41,13 @@
     <string name="mr_controller_volume_slider">Volume slider</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
-    <style name="Theme.MediaRouter" parent="">
-        <item name="windowNoTitle">false</item>
+    <style name="TextAppearance.MediaRouter.PrimaryText" parent="TextAppearance.AppCompat.Subhead"/>
+    <style name="TextAppearance.MediaRouter.SecondaryText" parent="TextAppearance.AppCompat.Body1"/>
+    <style name="TextAppearance.MediaRouter.Title" parent="TextAppearance.AppCompat.Title"/>
+    <style name="Theme.MediaRouter" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="windowNoTitle">true</item>
         <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.MediaRouteButton</item>
 
-        <item name="MediaRouteControllerWindowBackground">@drawable/mr_dialog_material_background_dark</item>
         <item name="mediaRouteCloseDrawable">@drawable/mr_dialog_close_dark</item>
         <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_dark</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_dark</item>
@@ -58,16 +56,13 @@
         <item name="mediaRouteTvIconDrawable">@drawable/ic_vol_type_tv_dark</item>
         <item name="mediaRouteSpeakerIconDrawable">@drawable/ic_vol_type_speaker_dark</item>
         <item name="mediaRouteSpeakerGroupIconDrawable">@drawable/ic_vol_type_speaker_group_dark</item>
-        <item name="mediaRouteChooserPrimaryTextStyle">@style/Widget.MediaRouter.ChooserText.Primary.Dark</item>
-        <item name="mediaRouteChooserSecondaryTextStyle">@style/Widget.MediaRouter.ChooserText.Secondary.Dark</item>
-        <item name="mediaRouteControllerTitleTextStyle">@style/Widget.MediaRouter.ControllerText.Title.Dark</item>
-        <item name="mediaRouteControllerPrimaryTextStyle">@style/Widget.MediaRouter.ControllerText.Primary.Dark</item>
-        <item name="mediaRouteControllerSecondaryTextStyle">@style/Widget.MediaRouter.ControllerText.Secondary.Dark</item>
+
+        <item name="mediaRouteControlPanelThemeOverlay">@null</item>
     </style>
-    <style name="Theme.MediaRouter.Light">
+    <style name="Theme.MediaRouter.Light" parent="ThemeOverlay.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
         <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.Light.MediaRouteButton</item>
 
-        <item name="MediaRouteControllerWindowBackground">@drawable/mr_dialog_material_background_light</item>
         <item name="mediaRouteCloseDrawable">@drawable/mr_dialog_close_light</item>
         <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_light</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_light</item>
@@ -76,76 +71,25 @@
         <item name="mediaRouteTvIconDrawable">@drawable/ic_vol_type_tv_light</item>
         <item name="mediaRouteSpeakerIconDrawable">@drawable/ic_vol_type_speaker_light</item>
         <item name="mediaRouteSpeakerGroupIconDrawable">@drawable/ic_vol_type_speaker_group_light</item>
-        <item name="mediaRouteChooserPrimaryTextStyle">@style/Widget.MediaRouter.ChooserText.Primary.Light</item>
-        <item name="mediaRouteChooserSecondaryTextStyle">@style/Widget.MediaRouter.ChooserText.Secondary.Light</item>
-        <item name="mediaRouteControllerTitleTextStyle">@style/Widget.MediaRouter.ControllerText.Title.Light</item>
-        <item name="mediaRouteControllerPrimaryTextStyle">@style/Widget.MediaRouter.ControllerText.Primary.Light</item>
-        <item name="mediaRouteControllerSecondaryTextStyle">@style/Widget.MediaRouter.ControllerText.Secondary.Light</item>
+
+        <item name="mediaRouteControlPanelThemeOverlay">@null</item>
     </style>
     <style name="Theme.MediaRouter.Light.DarkControlPanel">
+        <item name="mediaRouteControlPanelThemeOverlay">@style/ThemeOverlay.MediaRouter.Dark</item>
+    </style>
+    <style name="Theme.MediaRouter.LightControlPanel">
+        <item name="mediaRouteControlPanelThemeOverlay">@style/ThemeOverlay.MediaRouter.Light</item>
+    </style>
+    <style name="ThemeOverlay.MediaRouter.Dark" parent="ThemeOverlay.AppCompat.Dark">
         <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_dark</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_dark</item>
         <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_dark</item>
-        <item name="mediaRouteControllerPrimaryTextStyle">@style/Widget.MediaRouter.ControllerText.Primary.Dark</item>
-        <item name="mediaRouteControllerSecondaryTextStyle">@style/Widget.MediaRouter.ControllerText.Secondary.Dark</item>
+
     </style>
-    <style name="Theme.MediaRouter.LightControlPanel">
+    <style name="ThemeOverlay.MediaRouter.Light" parent="ThemeOverlay.AppCompat.Light">
         <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_light</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_light</item>
         <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_light</item>
-        <item name="mediaRouteControllerPrimaryTextStyle">@style/Widget.MediaRouter.ControllerText.Primary.Light</item>
-        <item name="mediaRouteControllerSecondaryTextStyle">@style/Widget.MediaRouter.ControllerText.Secondary.Light</item>
-    </style>
-    <style name="Widget.MediaRouter.ChooserText" parent="">
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textStyle">normal</item>
-    </style>
-    <style name="Widget.MediaRouter.ChooserText.Primary">
-        <item name="android:textSize">16sp</item>
-    </style>
-    <style name="Widget.MediaRouter.ChooserText.Primary.Dark">
-        <item name="android:textColor">#FFFFFFFF</item>
-    </style>
-    <style name="Widget.MediaRouter.ChooserText.Primary.Light">
-        <item name="android:textColor">#DE000000</item>
-    </style>
-    <style name="Widget.MediaRouter.ChooserText.Secondary">
-        <item name="android:textSize">14sp</item>
-    </style>
-    <style name="Widget.MediaRouter.ChooserText.Secondary.Dark">
-        <item name="android:textColor">#8AFFFFFF</item>
-    </style>
-    <style name="Widget.MediaRouter.ChooserText.Secondary.Light">
-        <item name="android:textColor">#8A000000</item>
-    </style>
-    <style name="Widget.MediaRouter.ControllerText" parent="Widget.MediaRouter.ChooserText"/>
-    <style name="Widget.MediaRouter.ControllerText.Primary">
-        <item name="android:textSize">16sp</item>
-    </style>
-    <style name="Widget.MediaRouter.ControllerText.Primary.Dark">
-        <item name="android:textColor">#FFFFFFFF</item>
-    </style>
-    <style name="Widget.MediaRouter.ControllerText.Primary.Light">
-        <item name="android:textColor">#DE000000</item>
-    </style>
-    <style name="Widget.MediaRouter.ControllerText.Secondary">
-        <item name="android:textSize">14sp</item>
-    </style>
-    <style name="Widget.MediaRouter.ControllerText.Secondary.Dark">
-        <item name="android:textColor">#FFFFFFFF</item>
-    </style>
-    <style name="Widget.MediaRouter.ControllerText.Secondary.Light">
-        <item name="android:textColor">#DE000000</item>
-    </style>
-    <style name="Widget.MediaRouter.ControllerText.Title">
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:textSize">20sp</item>
-    </style>
-    <style name="Widget.MediaRouter.ControllerText.Title.Dark">
-        <item name="android:textColor">#FFFFFFFF</item>
-    </style>
-    <style name="Widget.MediaRouter.ControllerText.Title.Light">
-        <item name="android:textColor">#DE000000</item>
     </style>
     <style name="Widget.MediaRouter.Light.MediaRouteButton" parent="Widget.AppCompat.Light.ActionButton">
         <item name="externalRouteEnabledDrawable">@drawable/mr_button_light</item>
