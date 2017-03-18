@@ -16,7 +16,7 @@
     <string msgid="6547130360349182381" name="mr_controller_no_media_selected">"မည်သည့်မီဒီမှ မရွေးချယ်ထားပါ"</string>
     <string msgid="5451884435510905406" name="mr_controller_pause">"ခဏရပ်ရန်"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"ဖွင့်ရန်"</string>
-    <string msgid="4570331844078181931" name="mr_controller_stop">"ကာစ်တ်လုပ်ခြင်း ရပ်တန့်ရန်"</string>
+    <string msgid="4570331844078181931" name="mr_controller_stop_casting">"ကာစ်တ်လုပ်ခြင်း ရပ်တန့်ရန်"</string>
     <string msgid="2361785992211841709" name="mr_controller_volume_slider">"အသံအတိုးအကျယ်ချိန်သည့် ဆလိုက်ဒါ"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"စနစ်"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"စက်ပစ္စည်းများ"</string>

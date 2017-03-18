@@ -16,7 +16,7 @@
     <string msgid="6547130360349182381" name="mr_controller_no_media_selected">"மீடியா எதுவும் தேர்ந்தெடுக்கப்படவில்லை"</string>
     <string msgid="5451884435510905406" name="mr_controller_pause">"இடைநிறுத்தும்"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"இயக்கும்"</string>
-    <string msgid="4570331844078181931" name="mr_controller_stop">"அனுப்புவதை நிறுத்து"</string>
+    <string msgid="4570331844078181931" name="mr_controller_stop_casting">"அனுப்புவதை நிறுத்து"</string>
     <string msgid="2361785992211841709" name="mr_controller_volume_slider">"ஒலியளவு ஸ்லைடர்"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"அமைப்பு"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"சாதனங்கள்"</string>

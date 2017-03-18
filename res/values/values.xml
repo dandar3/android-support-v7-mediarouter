@@ -9,6 +9,7 @@
     <attr format="reference" name="mediaRoutePlayDrawable"/>
     <attr format="reference" name="mediaRouteSpeakerGroupIconDrawable"/>
     <attr format="reference" name="mediaRouteSpeakerIconDrawable"/>
+    <attr format="reference" name="mediaRouteStopDrawable"/>
     <attr format="reference" name="mediaRouteTheme"/>
     <attr format="reference" name="mediaRouteTvIconDrawable"/>
     <declare-styleable name="MediaRouteButton"><attr format="reference" name="externalRouteEnabledDrawable"/><attr name="buttonTint"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
@@ -37,7 +38,8 @@
     <string name="mr_controller_no_media_selected">No media selected</string>
     <string name="mr_controller_pause">Pause</string>
     <string name="mr_controller_play">Play</string>
-    <string name="mr_controller_stop">Stop casting</string>
+    <string name="mr_controller_stop">Stop</string>
+    <string name="mr_controller_stop_casting">Stop casting</string>
     <string name="mr_controller_volume_slider">Volume slider</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
@@ -51,6 +53,7 @@
         <item name="mediaRouteCloseDrawable">@drawable/mr_dialog_close_dark</item>
         <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_dark</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_dark</item>
+        <item name="mediaRouteStopDrawable">@drawable/mr_media_stop_dark</item>
         <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_dark</item>
         <item name="mediaRouteDefaultIconDrawable">@drawable/ic_mr_button_disconnected_dark</item>
         <item name="mediaRouteTvIconDrawable">@drawable/ic_vol_type_tv_dark</item>
@@ -66,6 +69,7 @@
         <item name="mediaRouteCloseDrawable">@drawable/mr_dialog_close_light</item>
         <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_light</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_light</item>
+        <item name="mediaRouteStopDrawable">@drawable/mr_media_stop_light</item>
         <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_light</item>
         <item name="mediaRouteDefaultIconDrawable">@drawable/ic_mr_button_grey</item>
         <item name="mediaRouteTvIconDrawable">@drawable/ic_vol_type_tv_light</item>
@@ -83,12 +87,14 @@
     <style name="ThemeOverlay.MediaRouter.Dark" parent="ThemeOverlay.AppCompat.Dark">
         <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_dark</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_dark</item>
+        <item name="mediaRouteStopDrawable">@drawable/mr_media_stop_dark</item>
         <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_dark</item>
 
     </style>
     <style name="ThemeOverlay.MediaRouter.Light" parent="ThemeOverlay.AppCompat.Light">
         <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_light</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_light</item>
+        <item name="mediaRouteStopDrawable">@drawable/mr_media_stop_light</item>
         <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_light</item>
     </style>
     <style name="Widget.MediaRouter.Light.MediaRouteButton" parent="Widget.AppCompat.Light.ActionButton">

@@ -16,7 +16,7 @@
     <string msgid="6547130360349182381" name="mr_controller_no_media_selected">"ไม่ได้เลือกสื่อไว้"</string>
     <string msgid="5451884435510905406" name="mr_controller_pause">"หยุดชั่วคราว"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"เล่น"</string>
-    <string msgid="4570331844078181931" name="mr_controller_stop">"หยุดการแคสต์"</string>
+    <string msgid="4570331844078181931" name="mr_controller_stop_casting">"หยุดการแคสต์"</string>
     <string msgid="2361785992211841709" name="mr_controller_volume_slider">"แถบเลื่อนปรับระดับเสียง"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"ระบบ"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"อุปกรณ์"</string>
