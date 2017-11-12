@@ -47,6 +47,7 @@
     <style name="TextAppearance.MediaRouter.SecondaryText" parent="TextAppearance.AppCompat.Body1"/>
     <style name="TextAppearance.MediaRouter.Title" parent="TextAppearance.AppCompat.Title"/>
     <style name="Theme.MediaRouter" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:backgroundDimEnabled">true</item>
         <item name="windowNoTitle">true</item>
         <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.MediaRouteButton</item>
 
@@ -63,6 +64,7 @@
         <item name="mediaRouteControlPanelThemeOverlay">@null</item>
     </style>
     <style name="Theme.MediaRouter.Light" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:backgroundDimEnabled">true</item>
         <item name="windowNoTitle">true</item>
         <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.Light.MediaRouteButton</item>
 

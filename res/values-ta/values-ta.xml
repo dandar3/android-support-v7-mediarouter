@@ -19,6 +19,6 @@
     <string msgid="735874641921425123" name="mr_controller_stop">"நிறுத்துவதற்கான பொத்தான்"</string>
     <string msgid="8857886794086583226" name="mr_controller_stop_casting">"அனுப்புவதை நிறுத்து"</string>
     <string msgid="2361785992211841709" name="mr_controller_volume_slider">"ஒலியளவு ஸ்லைடர்"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"அமைப்பு"</string>
+    <string msgid="5441529851481176817" name="mr_system_route_name">"சிஸ்டம்"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"சாதனங்கள்"</string>
 </resources>

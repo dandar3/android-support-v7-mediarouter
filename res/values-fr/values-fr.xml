@@ -4,7 +4,7 @@
     <string msgid="5088427771788648085" name="mr_cast_button_connected">"Icône Cast. Connecté"</string>
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"Icône Cast. Connexion…"</string>
     <string msgid="816305490427819240" name="mr_cast_button_disconnected">"Icône Cast. Déconnecté"</string>
-    <string msgid="6349900579507521956" name="mr_chooser_searching">"Recherche d\'appareils en cours…"</string>
+    <string msgid="6349900579507521956" name="mr_chooser_searching">"Recherche d\'appareils…"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"Caster sur"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"Image de l\'album"</string>
     <string msgid="4868457957151124867" name="mr_controller_casting_screen">"Diffusion de l\'écran en cours…"</string>
