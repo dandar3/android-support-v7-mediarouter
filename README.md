@@ -5,6 +5,7 @@ https://maven.google.com/com/android/support/mediarouter-v7/26.1.0/mediarouter-v
 
 **Requires:**
 - `Android 8.0 (API 26) SDK Platform`
+- [dandar3/android-support-mediacompat](https://github.com/dandar3/android-support-mediacompat/tree/26.1.0)
 - [dandar3/android-support-v7-appcompat](https://github.com/dandar3/android-support-v7-appcompat/tree/26.1.0)
 - [dandar3/android-support-v7-palette](https://github.com/dandar3/android-support-v7-palette/tree/26.1.0)
 
