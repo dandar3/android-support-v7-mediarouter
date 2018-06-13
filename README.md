@@ -5,7 +5,7 @@ https://maven.google.com/com/android/support/mediarouter-v7/27.1.1/mediarouter-v
 
 **Requires:**
 - `Android 8.1 (API 27) SDK Platform`
-- [dandar3/android-support-mediacompat](https://github.com/dandar3/android-support-mediacompat/tree/27.1.1)
+- [dandar3/android-support-media-compat](https://github.com/dandar3/android-support-media-compat/tree/27.1.1)
 - [dandar3/android-support-v7-appcompat](https://github.com/dandar3/android-support-v7-appcompat/tree/27.1.1)
 - [dandar3/android-support-v7-palette](https://github.com/dandar3/android-support-v7-palette/tree/27.1.1)
 
