@@ -11,7 +11,8 @@ https://maven.google.com/com/android/support/mediarouter-v7/28.0.0/mediarouter-v
 - [dandar3/android-support-media-compat](https://github.com/dandar3/android-support-media-compat/tree/28.0.0)
 
 **References:**
-
+- https://developer.android.com/topic/libraries/support-library/revisions#28-0-0
+- https://developer.android.com/topic/libraries/support-library/packages.html#v7-mediarouter
 
 **SVN checkout:**
 - _File > Import... > Team > Team Project Set > URL:_<br/>

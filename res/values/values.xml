@@ -12,7 +12,18 @@
     <attr format="reference" name="mediaRouteStopDrawable"/>
     <attr format="reference" name="mediaRouteTheme"/>
     <attr format="reference" name="mediaRouteTvIconDrawable"/>
-    <declare-styleable name="MediaRouteButton"><attr format="reference" name="externalRouteEnabledDrawable"/><attr format="color" name="mediaRouteButtonTint"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
+    <declare-styleable name="MediaRouteButton">
+        <!-- This drawable is a state list where the "checked" state
+             indicates active media routing.  Checkable indicates connecting
+             and non-checked / non-checkable indicates
+             that media is playing to the local device only. -->
+        <attr format="reference" name="externalRouteEnabledDrawable"/>
+        <!-- Tint to apply to the media route button -->
+        <attr format="color" name="mediaRouteButtonTint"/>
+
+        <attr name="android:minWidth"/>
+        <attr name="android:minHeight"/>
+    </declare-styleable>
     <dimen name="mr_controller_volume_group_list_item_height">68dp</dimen>
     <dimen name="mr_controller_volume_group_list_item_icon_size">24dp</dimen>
     <dimen name="mr_controller_volume_group_list_max_height">288dp</dimen>
@@ -22,10 +33,12 @@
     <integer name="mr_controller_volume_group_list_animation_duration_ms">400</integer>
     <integer name="mr_controller_volume_group_list_fade_in_duration_ms">400</integer>
     <integer name="mr_controller_volume_group_list_fade_out_duration_ms">200</integer>
+    <integer name="mr_update_routes_delay_ms">300</integer>
     <string name="mr_button_content_description">Cast button</string>
     <string name="mr_cast_button_connected">Cast button. Connected</string>
     <string name="mr_cast_button_connecting">Cast button. Connecting</string>
     <string name="mr_cast_button_disconnected">Cast button. Disconnected</string>
+    <string name="mr_cast_dialog_title_view_placeholder" translatable="false">No info available</string>
     <string name="mr_chooser_searching">Finding devices</string>
     <string name="mr_chooser_title">Cast to</string>
     <string name="mr_controller_album_art">Album art</string>
@@ -41,6 +54,8 @@
     <string name="mr_controller_stop">Stop</string>
     <string name="mr_controller_stop_casting">Stop casting</string>
     <string name="mr_controller_volume_slider">Volume slider</string>
+    <string name="mr_dialog_device_header" translatable="false">Cast to a device</string>
+    <string name="mr_dialog_route_header" translatable="false">Play on a group</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
     <style name="TextAppearance.MediaRouter.PrimaryText" parent="TextAppearance.AppCompat.Subhead"/>
